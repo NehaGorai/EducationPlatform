@@ -1,21 +1,19 @@
 import React from 'react'
+import SearchBar from './SearchBar'
 
 function Header() {
     return (
         <>
-            <header className="bg-zinc-900 p-4 flex justify-between items-center">
-                <div className="text-white text-2xl">EdPlatform</div>
-                <input
-                    type="text"
-                    placeholder="Search Courses..."
-                    className="p-2 w-1/3 rounded"
-                />
+            <header className="bg-gray-800 p-4 fixed top-0 w-full text-white flex justify-between items-center">
+                <div className=" text-2xl">EdPlatform</div>
+                <SearchBar />
 
                 <nav>
-                    <ul className="flex space-x-4 text-white">
+                    <ul className="flex space-x-4">
                         <li>Home</li>
                         <li>Courses</li>
                         <li>About</li>
+                        <li>Contact</li>
                     </ul>
                 </nav>
             </header>
