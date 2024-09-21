@@ -5,6 +5,9 @@ import Sort from './components/Sort';
 import React, { useState } from 'react';
 import CourseList from './components/CourseList';
 import Footer from './components/Footer';
+import About from './components/About';
+import Contact from './components/Contact';
+
 const coursesData = [
   {
     id: 1,
@@ -97,7 +100,9 @@ const coursesData = [
 function App() {
   const [courses, setCourses] = useState(coursesData);
   return (
+
     <>
+
       <div className="bg-gray-100">
         <Header />
         <Hero />
@@ -107,10 +112,13 @@ function App() {
             <Sort />
           </div>
           <CourseList courses={courses} />
+          <About />
+          <Contact />
         </section>
         <Footer />
 
       </div>
+
     </>
   );
 }
