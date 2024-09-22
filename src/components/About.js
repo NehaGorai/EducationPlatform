@@ -7,7 +7,7 @@ function About() {
             <div className="flex flex-col justify-between ">
                 <div>
                     <h1 className="text-3xl font-bold mb-4 text-gray-800">About Us</h1>
-                    <p className="text-lg mb-4 text-gray-700 leading-relaxed">
+                    <p className="text-lg mb-8 text-gray-700 leading-relaxed">
                         Welcome to our Education Platform, where learning meets innovation. Our platform provides high-quality courses across a range of topics to help individuals advance in their personal and professional lives.
                     </p>
                     <p className="text-lg mb-4 text-gray-700 leading-relaxed">
