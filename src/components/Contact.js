@@ -26,8 +26,8 @@ function Contact() {
                 <h1 className="text-2xl font-bold mb-4">Contact Us</h1>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     {/* First Name */}
-                    <div className='flex gap-4'>
-                        <div className="mb-4 w-1/2">
+                    <div className='md:flex gap-4'>
+                        <div className="mb-4 md:w-1/2">
                             <label className="block mb-2">First Name</label>
                             <input
                                 {...register('firstName', { required: true, minLength: 2 })}
@@ -39,7 +39,7 @@ function Contact() {
                         </div>
 
                         {/* Last Name */}
-                        <div className="mb-4 w-1/2">
+                        <div className="mb-4 md:w-1/2">
                             <label className="block mb-2">Last Name</label>
                             <input
                                 {...register('lastName', { required: true, minLength: 2 })}
@@ -52,8 +52,8 @@ function Contact() {
                     </div>
 
                     {/* Email */}
-                    <div className='flex gap-4 '>
-                        <div className="mb-4 w-1/2">
+                    <div className='md:flex gap-4 '>
+                        <div className="mb-4 md:w-1/2">
                             <label className="block mb-2">Email</label>
                             <input
                                 {...register('email', {
@@ -68,7 +68,7 @@ function Contact() {
                         </div>
 
                         {/* Phone Number */}
-                        <div className="mb-4 w-1/2">
+                        <div className="mb-4 md:w-1/2">
                             <label className="block mb-2">Phone Number</label>
                             <input
                                 {...register('phone', {
